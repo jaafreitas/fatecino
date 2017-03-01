@@ -1,5 +1,7 @@
 // Rolagem (scroll) do texto
 
+// Library Manager -> Adafruit LiquidCrystal by Adafruit.
+// https://github.com/adafruit/Adafruit_LiquidCrystal
 #include <Adafruit_LiquidCrystal.h>
 
 // Os pinos para conexão do LCD podem variar de acordo com o modelo do Arduino.
@@ -21,7 +23,7 @@ void setup() {
 void loop() {
   // Limpa o display LCD.
   lcd.clear();
-  
+
   String texto = "FATECINO - Clube de Arduino da Fatec";
   if (tamanho < 16) {
     // Posiciona o cursor na coordenada especificada

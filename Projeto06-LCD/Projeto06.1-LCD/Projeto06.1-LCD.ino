@@ -1,5 +1,7 @@
 // Exibição simples de texto
 
+// Library Manager -> Adafruit LiquidCrystal by Adafruit.
+// https://github.com/adafruit/Adafruit_LiquidCrystal
 #include <Adafruit_LiquidCrystal.h>
 
 // Os pinos para conexão do LCD podem variar de acordo com o modelo do Arduino.

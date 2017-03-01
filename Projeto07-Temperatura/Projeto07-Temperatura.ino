@@ -1,5 +1,7 @@
 // Uso do Sensor de Temperatura DHT11
 
+// Library Manager -> DHT sensor library by Adafruit.
+// https://github.com/adafruit/DHT-sensor-library
 #include <DHT.h>
 
 // Selecione o pino de sinal do DHT11.
@@ -22,10 +24,10 @@ void loop() {
   float temperaturaKelvin = temperaturaCelsius + 273.15;
 
   // Obtém a umidade.
-  float umidade = sensor.readHumidity(); 
-  
+  float umidade = sensor.readHumidity();
+
   // Exibir a temperatura e a umidade na serial.
-  Serial.print("Temperatura: ");  
+  Serial.print("Temperatura: ");
   Serial.print(temperaturaCelsius);
   Serial.print("\260C / ");
   Serial.print(temperaturaFahrenheit);
